@@ -1,6 +1,7 @@
 - 
   name: this is our first play.
   hosts: server
+  sudo: yes
   tasks: 
     - 
       name: 'installing'
