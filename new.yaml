@@ -1,6 +1,6 @@
 - 
   name: this is our first play.
-  hosts: webserver1
+  hosts: server
   vars: 
     age: 15
   tasks: 
