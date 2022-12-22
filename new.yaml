@@ -4,11 +4,11 @@
   hosts: server
 
   tasks:
-    - name: command module 
-      shell: sudo apt install apache2 -y
-      tags:
-        - simple_copy
-- name: service start      
+    #- name: command module 
+      #shell: sudo apt install apache2 -y
+      #tags:
+        #- simple_copy      
+  name: "create a dummy file on websever1"      
       service: 
         name: apache2
         state: started 
