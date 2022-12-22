@@ -1,22 +1,8 @@
-- 
-  name: this is our first play.
+-
+  name: for web server
   hosts: server
-  vars: 
-    age: 15
-  tasks: 
-    - 
-      name: 'creating file using variable'
-      command: touch false.txt
-      when: age == 15
-    - 
-      name: 'creating file using variable'
-      command: touch no.txt
-      when: age > 11
-    - 
-      name: 'creating file using variable'
-      command: touch yes.txt
-      when: age < 30
-    - 
-      name: 'creating file using variable'
-      command: touch /tmp/between_10_and_18.txt
-      when: age > 10 and age < 18
+  become: yes
+    tasks:
+    ansible.builtin.package:
+    name: apache2
+    state: present
