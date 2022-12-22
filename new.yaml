@@ -6,15 +6,15 @@
   tasks: 
     - 
       name: 'creating file using variable'
-      command: touch /tmp/false.txt
+      command: touch false.txt
       when: age == 18
     - 
       name: 'creating file using variable'
-      command: touch /tmp/no.txt
+      command: touch no.txt
       when: age > 18
     - 
       name: 'creating file using variable'
-      command: touch /tmp/yes.txt
+      command: touch yes.txt
       when: age < 10
     - 
       name: 'creating file using variable'
