@@ -1,6 +1,12 @@
-- 
-  name: this is sample yaml file
+# copy_file.yml
+
+- name: copy files to destination
   hosts: server
-  tasks: 
-      name: "install package httpd"
-      copy: src=/home/ubuntu/pk.txt  dest=/home/ubuntu/
+
+  tasks:
+    - name: copy src.txt as dest.txt in the same dir 
+      copy:
+        src: /home/ubuntu/pk.txt
+        dest: /home/ubuntu
+      tags:
+        - simple_copy
