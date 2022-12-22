@@ -9,7 +9,7 @@
       #tags:
         #- simple_copy      
   name: "create a dummy file on websever1"      
-      service: 
+  service: 
         name: apache2
         state: started 
     
