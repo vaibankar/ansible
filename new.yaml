@@ -5,6 +5,6 @@
   tasks: 
     - 
        name: "create a dummy file on websever1"
-      service: 
+       service: 
         name: apache2
         state: stopped
