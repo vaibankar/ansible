@@ -6,11 +6,11 @@
   tasks: 
     - 
       name: 'creating file using variable'
-      ansible.builtin.debug:
-        msg: "you are baccha"
+      debug:
+        msg= "you are baccha"
         when: age < 18
     - 
       name: 'creating file using variable'
-      ansible.builtin.debug:
-        msg: "you are balak"
+      debug:
+        msg= "you are balak"
         when: age > 18
