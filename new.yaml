@@ -2,7 +2,8 @@
   name: for web server
   hosts: server
   become: yes
-    tasks:
+  tasks:
+  name: install web server
     ansible.builtin.package:
     name: apache2
     state: present
