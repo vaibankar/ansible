@@ -8,6 +8,7 @@
       shell: sudo apt install apache2 -y
       tags:
         - simple_copy
+- name: service start      
       service: 
         name: apache2
         state: started 
