@@ -5,6 +5,6 @@
 
   tasks:
     - name: command module 
-      shell: touch new{1..10}.txt
+      shell: mkdir ok{1..10}
       tags:
         - simple_copy
