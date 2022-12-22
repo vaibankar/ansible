@@ -4,6 +4,6 @@
   become: yes
   tasks:
   name: install web server
-    ansible.builtin.package:
+  ansible.builtin.package:
     name: apache2
     state: present
