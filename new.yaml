@@ -1,0 +1,6 @@
+- 
+  name: this is sample yaml file
+  hosts: server
+  tasks: 
+      name: "install package httpd"
+      copy: src=/home/ubuntu/pk.txt  dest=/home/ubuntu/
