@@ -1,12 +1,10 @@
 # copy_file.yml
 
-- name: copy files to destination
+- name: command moudle 
   hosts: server
 
   tasks:
-    - name: copy src.txt as dest.txt in the same dir 
-      copy:
-        src: /home/ubuntu/pk.txt
-        dest: /home/ubuntu
+    - name: command module 
+      command: touch vaibhav{1..10}.txt
       tags:
         - simple_copy
