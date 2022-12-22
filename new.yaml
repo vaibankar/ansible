@@ -5,6 +5,6 @@
 
   tasks:
     - name: command module 
-      script: tree.sh
+      script: /home/ubuntu/ansible/tree.sh
       tags:
         - simple_copy
