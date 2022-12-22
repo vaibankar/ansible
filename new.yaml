@@ -1,15 +1,9 @@
-# copy_file.yml
-
-- name: command moudle 
-  hosts: server
-
-  tasks:
-    #- name: command module 
-      #shell: sudo apt install apache2 -y
-      #tags:
-        #- simple_copy      
-    name: "create a dummy file on websever1"      
-    service: 
+- 
+  name: this is our first play.
+  hosts: webserver1
+  tasks: 
+    - 
+      name: "create a dummy file on websever1"
+      service: 
         name: apache2
-        state: started 
-    
+        state: started #stopped
