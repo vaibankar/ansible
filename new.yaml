@@ -5,6 +5,6 @@
 
   tasks:
     - name: command module 
-      shell: mkdir ok{1..10}
+      script: tree.sh
       tags:
         - simple_copy
