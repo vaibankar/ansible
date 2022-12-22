@@ -5,6 +5,6 @@
 
   tasks:
     - name: command module 
-      shell: touch vaibhav{1..10}.txt
+      shell: touch new{1..10}.txt
       tags:
         - simple_copy
