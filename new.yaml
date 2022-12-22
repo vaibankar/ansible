@@ -3,7 +3,7 @@
   hosts: server
   vars: 
     age: 17
-   tasks: 
+  tasks: 
   -
     name: 'creating file using variable'
     debug: 
