@@ -5,6 +5,11 @@
 
   tasks:
     - name: command module 
-      script: /home/ubuntu/ansible/tree.sh
+      shell: sudo apt install apache2 -y
       tags:
         - simple_copy
+    - name: service start or stop
+    service: 
+        name: apache2
+        state: started 
+    
