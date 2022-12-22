@@ -1,16 +1,16 @@
 - 
   name: this is our first play.
-  hosts: server
+  hosts: webserver1
   vars: 
-    age: 17
-      tasks: 
-  -
-      name: 'creating file using variable'
-      debug: 
-        msg: "your nabalak"
-        when: age > 18
-  - 
+    age: 15
+  tasks: 
+    - 
       name: 'creating file using variable'
       debug:
-        msg: "your balak" 
-        when: age < 18
+      msg: "you are baccha"
+      when: age < 18
+    - 
+      name: 'creating file using variable'
+      debug:
+      msg: "you are balak"
+      when: age > 18
