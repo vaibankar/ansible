@@ -7,15 +7,15 @@
     - 
       name: 'creating file using variable'
       command: touch false.txt
-      when: age == 18
+      when: age == 15
     - 
       name: 'creating file using variable'
       command: touch no.txt
-      when: age > 18
+      when: age > 11
     - 
       name: 'creating file using variable'
       command: touch yes.txt
-      when: age < 10
+      when: age < 30
     - 
       name: 'creating file using variable'
       command: touch /tmp/between_10_and_18.txt
