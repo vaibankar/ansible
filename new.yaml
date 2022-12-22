@@ -6,11 +6,11 @@
    tasks: 
   -
     name: 'creating file using variable'
-      debug: 
-        msg: "your nabalak"
-       when: age > 18
+    debug: 
+      msg: "your nabalak"
+      when: age > 18
   - 
     name: 'creating file using variable'
-      debug:
-        msg: "your balak" 
-       when: age < 18
+    debug:
+     msg: "your balak" 
+     when: age < 18
