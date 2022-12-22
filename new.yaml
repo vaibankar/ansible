@@ -3,6 +3,15 @@
   hosts: server
   tasks: 
     - 
+      name: 'installing'
+      apt: name="{{ item }}" state=present
+      with_items: 
+        - apache2
+- 
+  name: this is our first play.
+  hosts: server
+  tasks: 
+    - 
       name: "create a dummy file on websever1"
       service: 
         name: apache2
