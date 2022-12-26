@@ -19,7 +19,4 @@
     ansible.builtin.template:
       remote_src: /home/ubuntu/ansible/creative-studio
       dest: /var/www/html/
-      owner: ubuntu
-      group: wheel
-      mode: '0644'
 
