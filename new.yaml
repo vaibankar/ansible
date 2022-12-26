@@ -5,7 +5,7 @@
   tasks:
 -
   name: install web server
-    apt:
+    ansible.builtin.apt:
       name: apache2
       state: present
 -
