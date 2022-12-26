@@ -8,3 +8,9 @@
     ansible.builtin.package:
       name: apache2
       state: present
+-
+  name: service start apache
+    service:
+    name: apache2
+    enabled: yes
+    state: started
