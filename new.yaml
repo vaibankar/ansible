@@ -18,5 +18,5 @@
     name: Configuring webserver file
     copy:
       dest: /var/www/html/index.html
-      content: " style="color:red">Tiger zinda hai.</p>"
+      content: "<p style="color:red">Tiger zinda hai.</p>"
 
