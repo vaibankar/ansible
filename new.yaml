@@ -18,5 +18,5 @@
     name: Configuring webserver file
     copy:
       dest: /var/www/html/index.html
-      content: "<h1>This page has been created using the Power of Ansible Automation</h1>"
+      content: " style="color:red">Tiger zinda hai.</p>"
 
