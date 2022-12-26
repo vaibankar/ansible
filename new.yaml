@@ -3,14 +3,20 @@
   hosts: server
   become: yes
   tasks:
-- 
-name: Install apache httpd  (state=present is optional)
-  ansible.builtin.apt:
-    name: apache2
-    state: present
--
-  name: service start apache
-  service:
-    name: apache2
-    enabled: yes
-    state: started
+  - 
+    name: Install apache httpd  (state=present is optional)
+    ansible.builtin.apt:
+      name: apache2
+      state: present
+  -
+    name: service start apache
+    service:
+      name: apache2
+      enabled: yes
+      state: started
+  -
+    name: Configuring webserver file
+    copy:
+      dest: /var/www/html/index.html
+      content: "<h1>This page has been created using the Power of Ansible Automation</h1>"
+
