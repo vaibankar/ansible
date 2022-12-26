@@ -18,13 +18,5 @@
     name: Configuring webserver file
     copy:
       dest: /var/www/html/index.html
-      content: "<!DOCTYPE html>
-<html>
-<body>
-
-<p>I am normal</p>
-<p style="font-size:50px;">I am Tiger</p>
-
-</body>
-</html>"
+      content: "<h1>Tiger ki ma ki aankh</h1>"
 
